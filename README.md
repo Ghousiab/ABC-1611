@@ -3,7 +3,7 @@
    login using command :docker login abcabc.azurecr.io
    push the image to check : docker push abcabc.azurecr.io/9e4e0201ea99
    ---------------------------------------------------------------------------
-   2. create a shell script  
+2. create a shell script  
     2.a takes 1 input (0/1)  
     2.b hava a conditional check  
         if 1 -> create a folder and a file inside that at a specific location  
@@ -13,8 +13,8 @@
     mkdir abc/b1
     created file using : vi ff1.sh
     executed using : ssh ff1.sh 
-    --------------------------------------------------------------------    
-  3.  Write a multi stage docker file  
+    --------------------------------------------------------------------
+ 3.  Write a multi stage docker file  
     3.a base stage  
         -> use ubuntu image and create abc user  
         -> install cron  
@@ -34,11 +34,11 @@
      build it using docker build --target -t create-my-image .
      to list the images : docker images
 ------------------------------------------------------
-  6. publish this image to container registry
+  4. publish this image to container registry
       push the image to check : docker push abcabc.azurecr.io/9e4e0201ea99
  --------------------------------------------
      
-  8. create a github repository with name ABC-1611 and push the file
+  5. create a github repository with name ABC-1611 and push the file
      created directory using mkdir abcgit
      moved to the directory using cd abcgit
      initialized git git init
